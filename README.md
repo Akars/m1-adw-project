@@ -1,4 +1,4 @@
-# all-in-one
+# WEB PROJECT M1
 
 ## Project setup
 ```
