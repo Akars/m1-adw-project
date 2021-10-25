@@ -8,16 +8,16 @@
   <div class="menu">
           <div class="menu-item">
             <!-- <div [routerLink]="['/explore/brands']"> go to this location </div> -->
-        <router-link tag="rl" active-class="active" to ="/">Accueil</router-link>
+        <router-link tag="rl" to ="/">Accueil</router-link>
       </div>
       <div class="menu-item">
-       <router-link tag="rl" active-class="active" to="/product"> Produit </router-link>
+       <router-link tag="rl" active-class="active" to="/productPage"> Produit </router-link>
       </div>
       <div class="menu-item">
-        <router-link tag="rl" active-class="active" to="/Profil"> Profil </router-link>
+        <router-link tag="rl" active-class="active" to="/ProfilPage"> Profil </router-link>
       </div>
       <div class="menu-item">
-        <router-link tag="rl" active-class="active" to= '/contact'> Contact</router-link>
+        <router-link tag="rl" active-class="active" to= '/contactPage'> Contact</router-link>
       </div>
     </div>
   </div>

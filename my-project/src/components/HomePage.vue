@@ -1,19 +1,18 @@
 <template>
-<div class="mainContainer">
-  <h1 >
-    Vente de composants d'ordinateur.
-  </h1>
-  <div class="container">
-    <h2>Qui ciblons nous ?</h2>
-    <div class="div1">
-      <div class="img"><img src="../img/img.jpg"></div>
-      <div class="text">Vous êtes en train de créer votre propre PC gamer de rêve et avez besoin d'acheter en ligne les pièces détachées informatiques que vous avez choisies ? Vous voulez upgrader votre PC de bureau à petit prix tout en conservant sa garantie ? Vous avez besoin d'un nouveau disque dur interne ou d'un disque SSD afin de ne plus subir les écrans de chargement interminables ? Bienvenue sur la boutique de pièces informatiques de All-In-One ! Nous avons tous les composants PC dont vous avez besoin ! Avant tout, commencez par vous demander quel boitier PC choisir en fonction de votre utilisation. Que vous cherchiez à acquérir un boîtier PC gamer ou bien à monter un mini PC de salon, cette catégorie vous offrira les modèles les plus perfectionnés de tours PC ! </div>
-    </div>
+<div>
+  <h1>Vente de composants d'ordinateur.</h1>
+  <div class="mainContainer">
+    <div class="container">
+      <h2>Qui ciblons nous ?</h2>
+      <div class="div1">
+        <div class="img"><img src="../img/img.jpg"></div>
+        <div class="text">Vous êtes en train de créer votre propre PC gamer de rêve et avez besoin d'acheter en ligne les pièces détachées informatiques que vous avez choisies ? Vous voulez upgrader votre PC de bureau à petit prix tout en conservant sa garantie ? Vous avez besoin d'un nouveau disque dur interne ou d'un disque SSD afin de ne plus subir les écrans de chargement interminables ? Bienvenue sur la boutique de pièces informatiques de All-In-One ! Nous avons tous les composants PC dont vous avez besoin ! Avant tout, commencez par vous demander quel boitier PC choisir en fonction de votre utilisation. Que vous cherchiez à acquérir un boîtier PC gamer ou bien à monter un mini PC de salon, cette catégorie vous offrira les modèles les plus perfectionnés de tours PC ! </div>
+      </div>
 
-    <h2>N'hésitez plus ! Commencez à commander !</h2>
+      <h2>N'hésitez plus ! Commencez à commander !</h2>
+    </div>
   </div>
 </div>
-
 </template>
 
 <script>
@@ -78,7 +77,7 @@ font-weight: bold;
   width: 270px;
   height: 204px;
   margin-left: 30px;
-  margin-top: -30px;
+
 }
 
 a {
@@ -97,10 +96,6 @@ a {
 h2 {
   text-align: center;
   padding-top: 20px;
-}
-
-.div1 {
-
 }
 
 .text {
