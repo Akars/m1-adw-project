@@ -6,26 +6,28 @@
       <button v-on:click="Panier"><img class="img1" src="../img/shopping.png" /></button>
     </div>
   <div class="menu">
-          <div class="menu-item">
-            <!-- <div [routerLink]="['/explore/brands']"> go to this location </div> -->
-        <router-link tag="rl" active-class="active" to ="/">Accueil</router-link>
+      <div class="menu-item">
+        <a href='/' class ='btn btn-primary btn-lg active' role="button"> Accueil </a>
       </div>
       <div class="menu-item">
-       <router-link tag="rl" active-class="active" to="/product"> Produit </router-link>
+        <a href='/#/product' class ='btn btn-primary btn-lg active' role="button"> Produit </a>
       </div>
       <div class="menu-item">
-        <router-link tag="rl" active-class="active" to="/Profil"> Profil </router-link>
+        <a href='/#/profil' class ='btn btn-primary btn-lg active' role="button"> Profil </a>
       </div>
       <div class="menu-item">
-        <router-link tag="rl" active-class="active" to= '/contact'> Contact</router-link>
+        <a href='/#/contact' class ='btn btn-primary btn-lg active' role="button"> Contact </a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import BaseButton from './BaseButton.vue'
 export default {
   name: 'Header',
+  components: { BaseButton },
+
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -62,12 +64,13 @@ export default {
 
 }
 
+/*
 .menu-item:hover{
-   background-color: white;
   position:relative;
   width: auto;
   display: block;
 }
+*/
 
 .menu-item:hover rl {
   color: #00008B;
