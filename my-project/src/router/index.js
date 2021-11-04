@@ -20,6 +20,16 @@ export default new Router({
       path: '/contactPage',
       name: 'ContactPage',
       component: () => import('../components/ContactPage.vue')
+    },
+    {
+      path: '/shopPage',
+      name: 'ShopPage',
+      component: () => import('../components/ShopPage.vue')
+    },
+    {
+      path: '/profilPage',
+      name: 'ProfilPage',
+      component: () => import('../components/ProfilPage.vue')
     }
   ]
 })

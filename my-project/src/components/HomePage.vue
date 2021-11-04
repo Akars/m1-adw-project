@@ -1,37 +1,48 @@
 <template>
-<div>
-  <h1>Vente de composants d'ordinateur.</h1>
-  <div class="mainContainer">
-    <div class="container">
-      <h2>Qui ciblons nous ?</h2>
-      <div class="div1">
-        <div class="img"><img src="../img/img.jpg"></div>
-        <div class="text">Vous êtes en train de créer votre propre PC gamer de rêve et avez besoin d'acheter en ligne les pièces détachées informatiques que vous avez choisies ? Vous voulez upgrader votre PC de bureau à petit prix tout en conservant sa garantie ? Vous avez besoin d'un nouveau disque dur interne ou d'un disque SSD afin de ne plus subir les écrans de chargement interminables ? Bienvenue sur la boutique de pièces informatiques de All-In-One ! Nous avons tous les composants PC dont vous avez besoin ! Avant tout, commencez par vous demander quel boitier PC choisir en fonction de votre utilisation. Que vous cherchiez à acquérir un boîtier PC gamer ou bien à monter un mini PC de salon, cette catégorie vous offrira les modèles les plus perfectionnés de tours PC ! </div>
-      </div>
+  <div>
+    <h1>Vente de composants d'ordinateur.</h1>
+    <div class="mainContainer">
+      <div class="container">
+        <h2>Qui ciblons nous ?</h2>
+        <div class="div1">
+          <div class="img"><img src="../img/img.jpg" /></div>
+          <div class="text">
+            Vous êtes en train de créer votre propre PC gamer de rêve et avez
+            besoin d'acheter en ligne les pièces détachées informatiques que
+            vous avez choisies ? Vous voulez upgrader votre PC de bureau à petit
+            prix tout en conservant sa garantie ? Vous avez besoin d'un nouveau
+            disque dur interne ou d'un disque SSD afin de ne plus subir les
+            écrans de chargement interminables ? Bienvenue sur la boutique de
+            pièces informatiques de All-In-One ! Nous avons tous les composants
+            PC dont vous avez besoin ! Avant tout, commencez par vous demander
+            quel boitier PC choisir en fonction de votre utilisation. Que vous
+            cherchiez à acquérir un boîtier PC gamer ou bien à monter un mini PC
+            de salon, cette catégorie vous offrira les modèles les plus
+            perfectionnés de tours PC !
+          </div>
+        </div>
 
-      <h2>N'hésitez plus ! Commencez à commander !</h2>
+        <h2>N'hésitez plus ! Commencez à commander !</h2>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
-
-import Header from './Header.vue'
+import Header from "./Header.vue";
 
 export default {
   components: {
-    Header
-  }
-}
+    Header,
+  },
+};
 </script>
 
 <style scoped>
-
 h1 {
-text-align: center;
-color: #4682B4;
-font-weight: bold;
+  text-align: center;
+  color: #4682b4;
+  font-weight: bold;
 }
 
 .mainContainer {
@@ -43,8 +54,8 @@ font-weight: bold;
   padding: 25px;
   min-height: calc(90vh - 50px);
   height: fit-content;
-  @media (max-width :640px): {
-    width: '100%'
+  @media (max-width: 640px) : {
+    width: "100%";
   }
 }
 
@@ -57,8 +68,8 @@ font-weight: bold;
 }
 
 .product {
-  border:solid;
-  flex:1;
+  border: solid;
+  flex: 1;
   justify-content: center;
   margin: 30px;
   margin-bottom: 50px;
@@ -66,18 +77,18 @@ font-weight: bold;
   max-height: 200px;
   min-width: 200px;
   min-height: 200px;
-  @media (max-width: 1100px): {
-            width: 100%;
-            height: 300px;
-            margin: 0px 0px 30px 0px;
-        }
+  @media (max-width: 1100px) : {
+    width: 100%;
+    height: 300px;
+    margin: 0px 0px 30px 0px;
+  }
 }
 
 .div1 img {
   width: 270px;
   height: 204px;
-  margin-left: 30px;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -104,4 +115,9 @@ h2 {
   margin-top: -150px;
   text-align: justify;
 }
-  </style>
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
