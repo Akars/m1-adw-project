@@ -5,7 +5,7 @@
       <div class="container">
         <h2>Qui ciblons nous ?</h2>
         <div class="div1">
-          <div class="img"><img src="src/img/img.jpg" /></div>
+          <div class="img"><img src="../img/img.jpg" /></div>
           <div class="text">
             Vous êtes en train de créer votre propre PC gamer de rêve et avez
             besoin d'acheter en ligne les pièces détachées informatiques que
@@ -59,31 +59,6 @@ h1 {
   }
 }
 
-.products {
-  justify-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-}
-
-.product {
-  border: solid;
-  flex: 1;
-  justify-content: center;
-  margin: 30px;
-  margin-bottom: 50px;
-  max-width: 200px;
-  max-height: 200px;
-  min-width: 200px;
-  min-height: 200px;
-  @media (max-width: 1100px) : {
-    width: 100%;
-    height: 300px;
-    margin: 0px 0px 30px 0px;
-  }
-}
-
 .div1 img {
   width: 270px;
   height: 204px;
@@ -98,7 +73,7 @@ a {
 
 .container {
   box-shadow: 0 0 10px #999;
-  margin: 40px;
+  margin-top: 20px;
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 20px;

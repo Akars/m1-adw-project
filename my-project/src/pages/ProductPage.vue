@@ -45,7 +45,7 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   background-color: white;
-  padding: 25px;
+  padding: 15px;
   min-height: calc(90vh - 50px);
   height: fit-content;
   justify-items: center;
@@ -64,7 +64,7 @@ h1 {
 }
 
 .product {
-  border-width: 2px;
+  border-style: ridge;
   flex: 1;
   justify-items: center;
   margin: 30px;
@@ -73,11 +73,21 @@ h1 {
   max-height: 300px;
   min-width: 200px;
   min-height: 200px;
+  font-size: 0.8em;
   @media (max-width: 1100px) {
     width: 100%;
     height: 300px;
     margin: 0px 0px 30px 0px;
   }
 }
-
+img{
+  height: 200px;
+  width: 190px;
+}
+.mb-2 .card-title {
+  border-top: black;
+  border-top: solid;
+  font-size: 1.4em;
+  text-align: center;
+}
 </style>

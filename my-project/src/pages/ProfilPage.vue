@@ -73,6 +73,7 @@ h1 {
   text-align: center;
 }
 .divProfil {
+  margin-top: 20px;
   background-color: white;
   padding: 20px 40px 20px 40px;
   box-shadow: 0 0 10px #999;

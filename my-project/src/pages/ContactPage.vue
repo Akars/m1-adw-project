@@ -37,11 +37,11 @@
         </h2>
         <div class="secondNetwork">
           <div class="">Facebook</div>
-          <img src="src/assets/fb.jpg" />
+          <img src="../assets/fb.jpg" />
           <div>Instagram</div>
-          <img src="src/assets/insta.jpg" />
+          <img src="../assets/insta.jpg" />
           <div>Whats'App</div>
-          <img src="src/assets/whatsapp.jpg" />
+          <img src="../assets/whatsapp.jpg" />
         </div>
       </div>
     </div>

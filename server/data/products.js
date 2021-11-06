@@ -7,42 +7,42 @@ const products = [
     {
         id: 2,
         name: 'Carte graphique',
-        img: '../assets/cg.jpg',
+        img: 'https://media.ldlc.com/r374/ld/products/00/05/75/26/LD0005752605_1.jpg',
     },
     {
         id: 3,
         name: 'Processeur',
-        img: '../assets/processeur.jpg',
+        img: 'https://www.tradediscount.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/processeur_cpu_-_intel_core_i5_2430m_-_sr0rw_-_2.4_ghz_1.jpg',
     },
     {
         id: 4,
         name: 'Disque dur',
-        img: '../assets/disqueDur.jpg',
+        img: 'https://www.cdiscount.com/pdt2/8/6/6/1/700x700/auc6955005691866/rw/disque-dur-interne-ssd-sata3-0-ssd-pour-ordinateur.jpg',
     },
     {
         id: 5,
         name: 'Carte mémoire',
-        img: '../assets/ram.jpg',
+        img: 'https://www.config-gamer.fr/media/k2/items/cache/d9ea00cd3cf996dd26b72b097a7da9f0_M.jpg',
     },
     {
         id: 6,
         name: 'Alimentation',
-        img: '../assets/alimentation.jpg',
+        img: 'https://media.materiel.net/r550/products/MN0005310999_1.jpg',
     },
     {
         id: 7,
         name: 'Refroidisseur',
-        img: '../assets/refroidisseur.jpg',
+        img: 'https://www.config-gamer.fr/media/k2/items/cache/980d2e4261c2191caf564855a42aab3c_L.jpg',
     },
     {
         id: 8,
         name: 'Boitier',
-        img: '../assets/boitier.jpg',
+        img: 'https://m.media-amazon.com/images/I/81X6i2gmc3L._AC_SX425_.jpg',
     },
     {
         id: 9,
         name: 'Autres produits',
-        img: '../assets/autres.jpg',
+        img: 'https://www.smidistri.com/9116-32309-thickbox/Array.jpg',
     },
 ]
 
