@@ -15,22 +15,22 @@ export default new Router({
     {
       path: '/productPage',
       name: 'ProductPage',
-      component: () => import('../components/ProductPage.vue')
+      component: () => import('../pages/ProductPage.vue')
     },
     {
       path: '/contactPage',
       name: 'ContactPage',
-      component: () => import('../components/ContactPage.vue')
+      component: () => import('../pages/ContactPage.vue')
     },
     {
       path: '/shopPage',
       name: 'ShopPage',
-      component: () => import('../components/ShopPage.vue')
+      component: () => import('../pages/ShopPage.vue')
     },
     {
       path: '/profilPage',
       name: 'ProfilPage',
-      component: () => import('../components/ProfilPage.vue')
+      component: () => import('../pages/ProfilPage.vue')
     }
   ]
 })

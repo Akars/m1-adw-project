@@ -37,11 +37,11 @@
         </h2>
         <div class="secondNetwork">
           <div class="">Facebook</div>
-          <img src="../assets/fb.jpg" />
+          <img src="src/assets/fb.jpg" />
           <div>Instagram</div>
-          <img src="../assets/insta.jpg" />
+          <img src="src/assets/insta.jpg" />
           <div>Whats'App</div>
-          <img src="../assets/whatsapp.jpg" />
+          <img src="src/assets/whatsapp.jpg" />
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
   flex-wrap: wrap;
   min-height: calc(90vh - 50px);
   height: fit-content;
-  @media (max-width: 640px) : {
+  @media (max-width: 640px): {
     width: "100%";
   }
 }

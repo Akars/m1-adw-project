@@ -5,7 +5,7 @@
       <div class="container">
         <h2>Qui ciblons nous ?</h2>
         <div class="div1">
-          <div class="img"><img src="../img/img.jpg" /></div>
+          <div class="img"><img src="src/img/img.jpg" /></div>
           <div class="text">
             Vous êtes en train de créer votre propre PC gamer de rêve et avez
             besoin d'acheter en ligne les pièces détachées informatiques que
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Header from "./Header.vue";
+import Header from "../components/Header.vue";
 
 export default {
   components: {
