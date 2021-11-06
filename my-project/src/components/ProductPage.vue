@@ -3,41 +3,15 @@
     <h1>Tous nos produits</h1>
     <div class="mainContainer">
       <div class="products">
-        <div class="product">
-          <div class="center">Carte mère</div>
-          <img class="img" src="../assets/carteMere.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Carte graphique</div>
-          <img class="img" src="../assets/cg.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Processeur</div>
-          <img class="img" src="../assets/processeur.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Disque dur</div>
-          <img class="img" src="../assets/disqueDur.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Carte mémoire</div>
-          <img class="img" src="../assets/ram.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Alimentation</div>
-          <img class="img" src="../assets/alimentation.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Refroidisseur</div>
-          <img class="img" src="../assets/refroidisseur.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Boitier</div>
-          <img class="img" src="../assets/boitier.jpg" />
-        </div>
-        <div class="product">
-          <div class="center">Autres produits</div>
-          <img class="img" src="../assets/autres.jpg" />
+        <div class="product" v-for="product in products">
+          <b-card
+            :title= product.name
+            :img-src=product.img
+            img-top
+            img-alt="Image"
+            style="max-width: 20rem;"
+            class="mb-2"
+          ></b-card>
         </div>
       </div>
     </div>
@@ -45,7 +19,17 @@
 </template>
 
 <script>
-export default {};
+import products from '../../../server/data/products';
+
+export default {
+  components:{
+  },
+  data() {
+    return {
+      products,
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -80,15 +64,13 @@ h1 {
 }
 
 .product {
-  border: solid;
   border-width: 2px;
   flex: 1;
-  border-color: #4682b4;
   justify-items: center;
   margin: 30px;
   margin-bottom: 50px;
   max-width: 200px;
-  max-height: 200px;
+  max-height: 300px;
   min-width: 200px;
   min-height: 200px;
   @media (max-width: 1100px) {
@@ -98,20 +80,4 @@ h1 {
   }
 }
 
-.img {
-  width: 195px;
-  height: 160px;
-  /* margin-right: auto; */
-  justify-items: center;
-}
-
-.center {
-  font-weight: bold;
-  text-align: center;
-  border-bottom: solid;
-  border-bottom-color: #4682b4;
-  border-width: 2px;
-  padding-bottom: 10px;
-  padding-top: 5px;
-}
 </style>

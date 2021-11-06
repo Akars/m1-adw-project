@@ -17,23 +17,21 @@
         <a href='/' class ='btn btn-primary btn-lg active' role="button"> Accueil </a>
       </div>
       <div class="menu-item">
-        <a href='/#/product' class ='btn btn-primary btn-lg active' role="button"> Produit </a>
+        <a href='/#/productPage' class ='btn btn-primary btn-lg active' role="button"> Produit </a>
       </div>
       <div class="menu-item">
-        <a href='/#/profil' class ='btn btn-primary btn-lg active' role="button"> Profil </a>
+        <a href='/#/profilPage' class ='btn btn-primary btn-lg active' role="button"> Profil </a>
       </div>
       <div class="menu-item">
-        <a href='/#/contact' class ='btn btn-primary btn-lg active' role="button"> Contact </a>
+        <a href='/#/contactPage' class ='btn btn-primary btn-lg active' role="button"> Contact </a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import BaseButton from './BaseButton.vue'
 export default {
   name: 'Header',
-  components: { BaseButton },
 
   data () {
     return {
