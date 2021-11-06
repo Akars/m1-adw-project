@@ -11,34 +11,31 @@
         /></router-link>
       </div>
     </div>
-    <div class="menu">
+
+  <div class="menu">
       <div class="menu-item">
-        <!-- <div [routerLink]="['/explore/brands']"> go to this location </div> -->
-        <router-link tag="rl" to="/">Accueil</router-link>
+        <a href='/' class ='btn btn-primary btn-lg active' role="button"> Accueil </a>
       </div>
       <div class="menu-item">
-        <router-link tag="rl" active-class="active" to="/productPage"
-          >Produit</router-link
-        >
+        <a href='/#/product' class ='btn btn-primary btn-lg active' role="button"> Produit </a>
       </div>
       <div class="menu-item">
-        <router-link tag="rl" active-class="active" to="/ProfilPage"
-          >Profil</router-link
-        >
+        <a href='/#/profil' class ='btn btn-primary btn-lg active' role="button"> Profil </a>
       </div>
       <div class="menu-item">
-        <router-link tag="rl" active-class="active" to="/contactPage"
-          >Contact</router-link
-        >
+        <a href='/#/contact' class ='btn btn-primary btn-lg active' role="button"> Contact </a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import BaseButton from './BaseButton.vue'
 export default {
-  name: "Header",
-  data() {
+  name: 'Header',
+  components: { BaseButton },
+
+  data () {
     return {
       msg: "Welcome to Your Vue.js App",
     };
@@ -70,13 +67,6 @@ export default {
   font-size: 20px;
   color: white;
   margin: 15px;
-}
-
-.menu-item:hover {
-  background-color: white;
-  position: relative;
-  width: auto;
-  display: block;
 }
 
 .menu-item:hover rl {
