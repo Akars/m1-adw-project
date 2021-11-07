@@ -32,7 +32,7 @@
                   Price: dazdazdazd
                 </b-card-text>
 
-                <b-button v-on:click="addToPanier(product)">Ajouter dans le panier</b-button>
+                <b-button class="b-button">Ajouter panier</b-button>
               </div>
             </b-card>
         </div>
@@ -43,20 +43,19 @@
 </template>
 
 <script>
-import products from '../../server/data/products'
-import alimentations from '../../server/data/alimentations'
-import cases from '../../server/data/cases'
-import coolings from '../../server/data/coolings'
-import cpus from '../../server/data/cpus'
-import graphicCards from '../../server/data/graphicCards'
-import hdds from '../../server/data/hdds'
-import motherBoards from '../../server/data/motherBoards'
-import others from '../../server/data/others'
-import rams from '../../server/data/rams'
+import products from '../../../server/data/products'
+import alimentations from '../../../server/data/alimentations'
+import cases from '../../../server/data/cases'
+import coolings from '../../../server/data/coolings'
+import cpus from '../../../server/data/cpus'
+import graphicCards from '../../../server/data/graphicCards'
+import hdds from '../../../server/data/hdds'
+import motherBoards from '../../../server/data/motherBoards'
+import others from '../../../server/data/others'
+import rams from '../../../server/data/rams'
 
 export default {
-  props: {
-    panier: { type: Object }
+  components:{
   },
   data() {
     return {
@@ -111,12 +110,8 @@ export default {
       }
     },
     showDetail(value){
+      console.log(value)
       this.selectedItem = value
-    },
-    addToPanier(product){
-      console.log("1")
-      this.$emit('add-to-panier', product)
-      console.log("2")
     },
   },
 };
@@ -205,8 +200,9 @@ h1 {
 }
 
 img{
-  height: 200px;
-  width: 190px;
+  height: 160px;
+  width: 200px;
+  margin-top: 10px;
 }
 
 button {
@@ -221,4 +217,7 @@ button {
   margin-left: 40px;
 }
 
+.b-button {
+margin-bottom: 60px;
+}
 </style>
