@@ -27,6 +27,10 @@ const app = new Vue({
     }
   },
 
+  async mounted(){
+    this.getPanier();
+  },
+
   methods: {
     async getPanier() {
       try {

@@ -5,7 +5,7 @@ class Panier {
     constructor() {
         this.createdAt = new Date()
         this.updatedAt = new Date()
-        this.products = []
+        this.items = []
     }
 }
 

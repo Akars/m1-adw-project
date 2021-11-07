@@ -28,11 +28,12 @@
             >
               <div v-if="selectedItem === product">
                 <b-card-text>
-                  sometext<br>
-                  Price: dazdazdazd
+                  {{product.description}}
+                  <br>
+                  Prix: {{product.price}}
                 </b-card-text>
 
-                <b-button class="b-button">Ajouter panier</b-button>
+                <b-button class="b-button" @click="addToPanier(product)">Ajouter panier</b-button>
               </div>
             </b-card>
         </div>
@@ -43,16 +44,16 @@
 </template>
 
 <script>
-import products from '../../../server/data/products'
-import alimentations from '../../../server/data/alimentations'
-import cases from '../../../server/data/cases'
-import coolings from '../../../server/data/coolings'
-import cpus from '../../../server/data/cpus'
-import graphicCards from '../../../server/data/graphicCards'
-import hdds from '../../../server/data/hdds'
-import motherBoards from '../../../server/data/motherBoards'
-import others from '../../../server/data/others'
-import rams from '../../../server/data/rams'
+import products from '../../server/data/products'
+import alimentations from '../../server/data/alimentations'
+import cases from '../../server/data/cases'
+import coolings from '../../server/data/coolings'
+import cpus from '../../server/data/cpus'
+import graphicCards from '../../server/data/graphicCards'
+import hdds from '../../server/data/hdds'
+import motherBoards from '../../server/data/motherBoards'
+import others from '../../server/data/others'
+import rams from '../../server/data/rams'
 
 export default {
   components:{
@@ -110,9 +111,12 @@ export default {
       }
     },
     showDetail(value){
-      console.log(value)
       this.selectedItem = value
     },
+    addToPanier(item) {
+      console.log("ede")
+      this.$emit('add-to-panier', item)
+    }
   },
 };
 </script>
