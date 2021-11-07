@@ -47,6 +47,10 @@ h1 {
   margin-top: 40px;
 }
 
+.btn {
+  width: 300px;
+}
+
 .menu {
   display: flex;
   align-items: center;

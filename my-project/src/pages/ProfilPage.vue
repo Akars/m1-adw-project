@@ -45,9 +45,7 @@
   </div>
 </template>
 
-
-
-// <style scoped>
+<style scoped>
 h1 {
   text-align: center;
   color: #4682b4;

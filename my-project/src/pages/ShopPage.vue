@@ -8,7 +8,10 @@
 <script>
 
 export default {
-
+  props: {
+    items: { type: Array, default: [] },
+    panier: { type: Object },
+  },
 };
 
 </script>

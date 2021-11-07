@@ -32,9 +32,14 @@
 import Header from "../components/Header.vue";
 
 export default {
+  props: {
+    items: { type: Array, default: [] },
+    panier: { type: Object },
+  },
   components: {
     Header,
   },
+
 };
 </script>
 

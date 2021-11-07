@@ -56,6 +56,10 @@ import others from '../../server/data/others'
 import rams from '../../server/data/rams'
 
 export default {
+  props: {
+    items: { type: Array, default: [] },
+    panier: { type: Object },
+  },
   components:{
   },
   data() {

@@ -1,10 +1,10 @@
 const hdds = [
     {
         id: 1,
-        name: 'Samsung disque SSD Série 870 EVO - 1 To 2,5" SATA III',
+        name: 'Samsung disque SSD',
         img: 'https://static.macway.com/images/p/g/originalid_1284500/0/1284512/main/1284512_984a8c0.jpg',
         price: '90€',
-        description: 'disque dur SSD très rapide'
+        description: 'Série 870 EVO - 1 To 2,5" SATA III'
     },
     {
         id: 2,

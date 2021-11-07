@@ -8,7 +8,7 @@ const others = [
     },
     {
         id: 2,
-        name: 'Ventilateur PC corsair pack 3 L120 Pro RGB',
+        name: 'Ventilateur PC corsair pack 3',
         img: 'https://www.smidistri.com/9116-32309-large/corsair-pack-3-x-ll120-pro-rgb-120-mm.jpg',
         price: '80€',
         description: 'Pack de 3 ventilateurs'

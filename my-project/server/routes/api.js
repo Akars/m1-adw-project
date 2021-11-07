@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express.Router()
+const router = express()
 
 class Panier {
     constructor() {
@@ -16,13 +16,11 @@ router.use((req, res, next) => {
     next()
 })
 
-router.route('/panier')
+router.get('/panier', (req, res) => {
+    res.json(req.session.panier)
+})
 
-    .get((req, res) => {
-        res.json(req.session.panier)
-    })
-
-    .post(async (req, res) =>{
+router.post('/panier', async (req, res) => {
         const product = req.body.product
         const quantity = parseInt(req.body.quantity)
 
@@ -31,10 +29,10 @@ router.route('/panier')
             quantity,
         }
 
-        req.session.panier.panier.push(newProduct)
+        req.session.panier.items.push(newProduct)
         req.session.panier.updatedAt = new Date()
 
         res.send()
-    })
+})
 
 module.exports = router

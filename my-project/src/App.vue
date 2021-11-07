@@ -1,7 +1,7 @@
 <template>
     <div class="app">
       <Header/>
-      <router-view :key ="$route.path"/>
+      <router-view :key ="$route.path" @add-to-panier="addToPanier"/>
     </div>
 </template>
 
@@ -12,6 +12,48 @@ export default {
   name: 'App',
   components: {
     Header
+  },
+  data() {
+    return {
+      items: [],
+      panier: {
+        createdAt: null,
+        updatedAt: null,
+        items: [],
+      }
+    }
+  },
+  async mounted(){
+    this.getPanier();
+  },
+  methods: {
+    async getPanier() {
+      try {
+        const res = await axios.get('/api/panier')
+        this.panier = res.data
+      }
+      catch(e) {
+        alert("Error to get the cart")
+      }
+    },
+
+    async addToPanier(item) {
+      const quantity = 1
+      console.log("hey")
+      const newItem = {
+        product: item,
+        quantity: quantity,
+      }
+      console.log(newItem)
+      try {
+        const res = await axios.post('api/panier', newItem)
+        this.panier.items.push(newItem)
+        this.panier.updatedAt = new Date()
+      }
+      catch (e) {
+        alert("Error adding in cart")
+      }
+    }
   }
 }
 
