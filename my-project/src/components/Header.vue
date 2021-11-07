@@ -14,16 +14,16 @@
 
   <div class="menu">
       <div class="menu-item">
-        <a href='/' class ='btn btn-primary btn-lg active' role="button"> Accueil </a>
+        <router-link tag="rl" active-class="active" to="/" class ='btn btn-primary btn-lg active' role="button"> Accueil </router-link>
       </div>
       <div class="menu-item">
-        <a href='/#/productPage' class ='btn btn-primary btn-lg active' role="button"> Produit </a>
+        <router-link tag="rl" active-class="active" to="/ProductPage" class ='btn btn-primary btn-lg active' role="button"> Produit </router-link>
       </div>
       <div class="menu-item">
-        <a href='/#/profilPage' class ='btn btn-primary btn-lg active' role="button"> Profil </a>
+        <router-link tag="rl" active-class="active" to="/ProfilPage" class ='btn btn-primary btn-lg active' role="button"> Profil </router-link>
       </div>
       <div class="menu-item">
-        <a href='/#/contactPage' class ='btn btn-primary btn-lg active' role="button"> Contact </a>
+        <router-link tag="rl" active-class="active" to='/ContactPage' class ='btn btn-primary btn-lg active' role="button"> Contact </router-link>
       </div>
     </div>
   </div>
@@ -43,6 +43,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  margin-top: 40px;
+}
+
 .menu {
   display: flex;
   align-items: center;

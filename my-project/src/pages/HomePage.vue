@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Vente de composants d'ordinateur.</h1>
+    <h1>Vente de composants d'ordinateur</h1>
     <div class="mainContainer">
       <div class="container">
         <h2>Qui ciblons nous ?</h2>

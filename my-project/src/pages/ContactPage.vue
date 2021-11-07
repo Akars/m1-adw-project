@@ -88,7 +88,8 @@ h2 {
 h3 {
   font-family: "Andale Mono", monospace;
   color: #778899;
-  font-weight: solid;
+  font-weight: bold;
+  font-size: 1.3em;
   text-decoration: underline;
 }
 
