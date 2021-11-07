@@ -24,7 +24,7 @@ export default {
     }
   },
   async mounted(){
-    this.getPanier();
+
   },
   methods: {
     async getPanier() {
