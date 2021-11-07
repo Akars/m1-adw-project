@@ -32,7 +32,7 @@
                   Price: dazdazdazd
                 </b-card-text>
 
-                <b-button>Ajouter dans le panier</b-button>
+                <b-button class="b-button">Ajouter panier</b-button>
               </div>
             </b-card>
         </div>
@@ -200,8 +200,9 @@ h1 {
 }
 
 img{
-  height: 200px;
-  width: 190px;
+  height: 160px;
+  width: 200px;
+  margin-top: 10px;
 }
 
 button {
@@ -216,4 +217,7 @@ button {
   margin-left: 40px;
 }
 
+.b-button {
+margin-bottom: 60px;
+}
 </style>
