@@ -2,9 +2,10 @@
   <div>
     <h1>Tous nos produits</h1>
     <div class="mainContainer">
+      <button v-if="selectedProduct !== null" v-on:click="backToProducts">Retour</button>
       <div class="products">
-        <div class="product" v-for="product in products">
-          <router-link :to=product.route class="card">
+        <div v-if="selectedProduct === null" class="product" v-for="product in products" :key="product.id">
+          <div class="card" v-on:click="selectProduct(product.id)">
             <b-card
               :title= product.name
               :img-src=product.img
@@ -13,15 +14,45 @@
               style="max-width: 20rem;"
               class="mb-2"
             ></b-card>
-          </router-link>
+          </div>
+        </div>
+        <div v-if="selectedProduct !== null" class="product" v-for="product in selectedProduct">
+          <div class="card" v-on:click="showDetail(product)">
+            <b-card
+              :title= product.name
+              :img-src=product.img
+              img-top
+              img-alt="Image"
+              style="max-width: 20rem;"
+              class="mb-2"
+            >
+              <div v-if="selectedItem === product">
+                <b-card-text>
+                  sometext<br>
+                  Price: dazdazdazd
+                </b-card-text>
+
+                <b-button>Ajouter dans le panier</b-button>
+              </div>
+            </b-card>
         </div>
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
-import products from '../../../server/data/products';
+import products from '../../../server/data/products'
+import alimentations from '../../../server/data/alimentations'
+import cases from '../../../server/data/cases'
+import coolings from '../../../server/data/coolings'
+import cpus from '../../../server/data/cpus'
+import graphicCards from '../../../server/data/graphicCards'
+import hdds from '../../../server/data/hdds'
+import motherBoards from '../../../server/data/motherBoards'
+import others from '../../../server/data/others'
+import rams from '../../../server/data/rams'
 
 export default {
   components:{
@@ -29,8 +60,60 @@ export default {
   data() {
     return {
       products,
+      alimentations,
+      cases,
+      coolings,
+      cpus,
+      graphicCards,
+      hdds,
+      motherBoards,
+      others,
+      rams,
+      selectedProduct: null,
+      selectedItem: null,
     }
-  }
+  },
+
+  methods: {
+    backToProducts(){
+      this.selectedProduct = null
+    },
+    selectProduct(productLabel){
+      switch(productLabel) {
+        case 1:
+          this.selectedProduct = this.motherBoards
+              break
+        case 2:
+          this.selectedProduct = this.graphicCards
+              break
+        case 3:
+          this.selectedProduct = this.cpus
+              break
+        case 4:
+          this.selectedProduct = this.hdds
+              break
+        case 5:
+          this.selectedProduct = this.rams
+              break
+        case 6:
+          this.selectedProduct = this.alimentations
+              break
+        case 7:
+          this.selectedProduct = this.coolings
+              break
+        case 8:
+          this.selectedProduct = this.cases
+              break
+        case 9:
+          this.selectedProduct = this.others
+              break
+      }
+    },
+    showDetail(value){
+      console.log(value)
+      this.selectedItem = value
+    },
+  },
 };
 </script>
 
@@ -93,7 +176,6 @@ h1 {
 
 .products {
   justify-items: center;
-  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   margin: 40px;
@@ -116,9 +198,22 @@ h1 {
     margin: 0px 0px 30px 0px;
   }
 }
+
 img{
   height: 200px;
   width: 190px;
+}
+
+button {
+  background-color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 </style>
