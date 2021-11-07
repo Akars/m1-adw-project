@@ -4,7 +4,7 @@
     <div class="mainContainer">
       <div class="products">
         <div class="product" v-for="product in products">
-          <a href="#" class="card">
+          <router-link :to=product.route class="card">
             <b-card
               :title= product.name
               :img-src=product.img
@@ -13,7 +13,7 @@
               style="max-width: 20rem;"
               class="mb-2"
             ></b-card>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
