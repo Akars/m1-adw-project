@@ -33,4 +33,8 @@ router.route('/panier')
 
         req.session.panier.panier.push(newProduct)
         req.session.panier.updatedAt = new Date()
+
+        res.send()
     })
+
+module.exports = router
