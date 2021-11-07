@@ -4,14 +4,16 @@
     <div class="mainContainer">
       <div class="products">
         <div class="product" v-for="product in products">
-          <b-card
-            :title= product.name
-            :img-src=product.img
-            img-top
-            img-alt="Image"
-            style="max-width: 20rem;"
-            class="mb-2"
-          ></b-card>
+          <a href="#" class="card">
+            <b-card
+              :title= product.name
+              :img-src=product.img
+              img-top
+              img-alt="Image"
+              style="max-width: 20rem;"
+              class="mb-2"
+            ></b-card>
+          </a>
         </div>
       </div>
     </div>
@@ -33,6 +35,34 @@ export default {
 </script>
 
 <style scoped>
+
+.card {
+  width: 220px;
+  height: 321px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  color: #3D56B2;
+}
+
+.card:hover{
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
 h1 {
   text-align: center;
   color: #4682b4;
@@ -54,6 +84,13 @@ h1 {
   }
 }
 
+.mb-2 .card-title {
+  border-top: black;
+  border-top: solid;
+  font-size: 1.4em;
+  text-align: center;
+}
+
 .products {
   justify-items: center;
   justify-content: space-between;
@@ -64,7 +101,6 @@ h1 {
 }
 
 .product {
-  border-style: ridge;
   flex: 1;
   justify-items: center;
   margin: 30px;
@@ -73,7 +109,7 @@ h1 {
   max-height: 300px;
   min-width: 200px;
   min-height: 200px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   @media (max-width: 1100px) {
     width: 100%;
     height: 300px;
@@ -84,10 +120,5 @@ img{
   height: 200px;
   width: 190px;
 }
-.mb-2 .card-title {
-  border-top: black;
-  border-top: solid;
-  font-size: 1.4em;
-  text-align: center;
-}
+
 </style>
